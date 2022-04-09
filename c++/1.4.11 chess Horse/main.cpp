@@ -11,7 +11,7 @@ int main()
     {
         cout << "YES" << endl;
     }
-    else if (abs(c - a) == 1 && abs(d - b) == 2)
+    else if ((abs(c - a) == 1 && abs(d - b) == 2) || (abs(c - a) == 2 && abs(d - b) == 1))
     {
         cout << "YES" << endl;
     }
