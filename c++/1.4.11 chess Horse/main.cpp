@@ -1,15 +1,17 @@
 #include <iostream>
+#include <cmath>
+
 using namespace std;
 
 int main()
 {
     int a, b, c, d;
     cin >> a >> b >> c >> d;
-    if (a == b && c == d)
+    if (a == c && b == d)
     {
         cout << "YES" << endl;
     }
-    else if ((c - a == 1 || c - a == -1) && (d - b == 2 || d - b == -2))
+    else if (abs(c - a) == 1 && abs(d - b) == 2)
     {
         cout << "YES" << endl;
     }
