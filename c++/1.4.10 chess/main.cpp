@@ -13,5 +13,13 @@ int main()
     {
         cout << "YES" << endl;
     }
+    else if (b - d == a - c || b - d == -(a - c))
+    {
+        cout << "YES" << endl;
+    }
+    else
+    {
+        cout << "NO" << endl;
+    }
     return 0;
 }
