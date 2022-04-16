@@ -18,19 +18,18 @@ int main()
         max = n;
     }
     int result;
-    if (min - y < max - x)
-    {
-        result = min - y;
-        cout << result << endl;
-    }
-    else if (x == 0 || y == 0)
+
+    if (x == 0 || y == 0)
     {
         result = 0;
         cout << result << endl;
     }
     else
     {
-        result = max - y;
+        int min_x, min_y;
+        min_x = (abs(0 - x) < abs(min - x)) ? abs(0 - x) : abs(min - x);
+        min_y = (abs(0 - y) < abs(max - y)) ? abs(0 - y) : abs(max - y);
+        result = (min_x < min_y) ? min_x : min_y;
         cout << result << endl;
     }
 
